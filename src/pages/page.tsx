@@ -9,6 +9,8 @@ import {getAllTodos} from '@/api';
 const Home: React.FC = () => {
     const [todos, setTodos] = useState<Task[]>([]); /*api.tsのPromiseを使うときは、ここで受けれるようにする。(エラー出ちゃっての解決策)*/
 
+    //test 変更
+
     useEffect(() => {
         const fetchTodos = async () => {
             setTodos(await getAllTodos());
