@@ -19,6 +19,8 @@ const Home: React.FC = () => {
         fetchTodos();
     }, []);
 
+
+    
     return (
         <main className={style.container}>
             <h1 className={style.title}>Todo App</h1>
