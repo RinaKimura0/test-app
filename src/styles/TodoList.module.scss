@@ -1,0 +1,39 @@
+.todo_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); // shadowのデフォルト値
+}
+
+.editing{ /*あとで見本の検証画面と比べて！ */
+    margin-right: 0.5rem; /* mr-2 に相当 */
+    padding: 0.25rem 0.5rem; /* py-1 px-2 に相当 */
+    border-radius: 0.25rem; /* rounded に相当 */
+    border: 1px solid #d1d5db; /* border-gray-400 border に相当 */
+}
+
+.edit_btn{
+    font-size: 100%;
+    color: #10b981; /* green-500 の色を直接指定 */
+    margin-right: 0.75rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.delet_btn {
+    font-size: 100%;
+    color: #dc2626;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

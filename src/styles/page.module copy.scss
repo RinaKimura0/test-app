@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Assuming screen height is the minimum height */
+    padding: 2px;
+    background-color: #f2f2f2; /* Equivalent to gray-200 in Tailwind CSS */
+
+}
+
+.title {
+    font-size: 2rem; /* text-4xl のデフォルト値 */
+    font-weight: bold;
+    color: #474747; /* gray-700 のデフォルト値 */
+    margin-top: -32px;   
+}
+
+.boxcontainer{
+    width: 100%; /* w-full に相当 */
+    max-width: 20rem; /* max-w-xs のデフォルト値 */
+    margin-top: 2rem; /* mt-5 のデフォルト値 */  
+}
+
+.innerbox{
+    width: 100%; /* w-full に相当 */
+    padding: 0 8rem; /* px-8 に相当 */
+    padding-top: 6rem; /* py-6 に相当 */
+    background-color: white; /* bg-white に相当 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md のデフォルト値に近い */
+    border-radius: 0.5rem; /* rounded-lg に相当 */
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 画面の高さを指定(固定されている) */
+    background-color: rgb(229 231 235); /* Equivalent to gray-200 in Tailwind CSS */
+
+}
+
+.title {
+    font-size: 2.25rem; /* text-4xl のデフォルト値 */
+    line-height: 1rem;
+    font-weight: 700;
+    color: rgb(55 65 81); /* gray-700 のデフォルト値 */
+    margin-top: -8rem;   
+    // margin: 0;
+}
+
+.boxcontainer{
+    width: 100%; /* w-full に相当 */
+    max-width: 36rem; /* max-w-xs のデフォルト値 */
+    margin-top: 1.25rem;
+    display: block;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innerbox{
+    width: 100%; /* w-full に相当 */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-width: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md のデフォルト値に近い */
+    border-radius: 0.5rem; /* rounded-lg に相当 */
+    background-color: white; /* bg-white に相当 */
+    box-sizing: border-box;
+
+    // font-family: inherit;
+    // font-feature-settings: inherit;
+    // font-variation-settings: inherit;
+    // font-size: 100%;
+    // font-weight: inherit;
+    // line-height: inherit;
+    // letter-spacing: inherit;
+    // color: inherit;
+    // margin: 0;
+}
+
+
+
+
+
+

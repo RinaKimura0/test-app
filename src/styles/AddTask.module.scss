@@ -1,0 +1,72 @@
+.container { /*クラス名変えた方がいいかな？文字入力する枠だよ*/
+    // margin: 1rem; /* マージンを上下左右1remに設定 */
+    margin-bottom: 0.75rem;
+    // display: block;
+    // margin-top: 0em;
+      
+     /* メディアクエリで横方向のマージンを調整 */
+    @media (min-width: 768px) {
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+        > * {
+            padding: 0 0.5rem;
+        }
+     }
+      
+     /* 子要素のマージン */
+    > * {
+        margin: 0.4rem 0;
+    }
+}
+
+.input_text {
+    width: 100%; /* w-full */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    // border-width: 1px;下とどう違うの？
+    border: 1px solid; /* border */
+    border-radius: 0.5rem; /* rounded-lg */
+    outline: none; /* focus:outline-none */
+    box-sizing: border-box;
+    // border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+      
+    &:focus {
+        border-color: #3182CE; /* focus:border-blue-400 */
+    }
+}
+       
+
+.btn_submit{
+    --tw-space-y-reverse: 0;
+    // margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    // margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+    width: 100%;
+  border: 1px solid; // 例として、blue-500の色を具体的に指定
+  padding: 0.7rem 1rem;
+  font-size: 100%;
+  color: white;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));// 例として、blue-500の色を具体的に指定
+  border-radius: 0.25rem;
+  transition: transform 200ms ease-in-out;
+//   transition-duration: 200ms;
+
+
+  &:hover {
+    background-color: #4299e1; // 例として、blue-400の色を具体的に指定
+    transform: scale(0.95);
+    cursor: pointer;
+    text-transform: none;
+  }
+}
+    
+
+
+
+
+
+
