@@ -7,10 +7,9 @@ import { Task } from '@/types';
 import {getAllTodos} from '@/api';
 
 const Home: React.FC = () => {
-    const [todos, setTodos] = useState<Task[]>([]); /*api.tsのPromiseを使うときは、ここで受けれるようにする。(エラー出ちゃっての解決策)*/
+    const [todos, setTodos] = useState<Task[]>([]); //api.tsのPromiseを使うときは、ここで受けれるようにする。(エラー出ちゃっての解決策)
 
-    //test 変更
-
+    //変更
     useEffect(() => {
         const fetchTodos = async () => {
             setTodos(await getAllTodos());
@@ -20,14 +19,22 @@ const Home: React.FC = () => {
     }, []);
 
 
+    const handleRelodeTodo = async () => {
+      try {
+        const newTodos = await getAllTodos();
+        setTodos(newTodos);
+      } catch (error) {
+        console.error("Error fetching todos:", error);
+      }
+    };
     
     return (
         <main className={style.container}>
             <h1 className={style.title}>Todo App</h1>
             <div className={style.boxcontainer}>
                 <div className={style.innerbox}>
-                    <AddTask />
-                    <TodoList todos={todos} />
+                    <AddTask addPageTodo={handleRelodeTodo}/>
+                    <TodoList todos={todos} reloadTodo={handleRelodeTodo}/>
                 </div>
             </div>
         </main>

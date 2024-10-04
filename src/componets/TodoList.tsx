@@ -5,18 +5,17 @@ import style from "@/styles/TodoList.module.scss";
 
 interface TodoListProps {
   todos : Task[];
+  reloadTodo : () => Promise<void>;
 }
 
-const TodoList = ({ todos }: TodoListProps ) => {
+const TodoList = ({ todos, reloadTodo }: TodoListProps) => {
   return (
     <ul className={style.todo_list}>
       {todos.map((todo) => (
-       <Todo key ={todo.id} todo = {todo} />
-      ))};
-      </ul>
+       <Todo key ={todo.id} todo = {todo} reloadTodo={reloadTodo}/>
+      ))}
+    </ul>
   );
 };
 
 export default TodoList
-
-/* OK */
